@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Filmes - Orgulho Sápico</title>
+    <link rel="stylesheet" href="explorar_filmes.css">
+    <script defer src="scripts.js"></script>
+</head>
+<body>
+    <header class="hero">
+        <nav>
+            <ul>
+                <li><a href="portrait.html">Início</a></li>
+                <li><a href="#categorias">Categorias</a></li>
+                <li><a href="#series">Séries</a></li>
+                <li><a href="#comunidade">Comunidade</a></li>
+                <li><a href="#contato">Contato</a></li>
+        </nav>
+        <div class="hero-text">
+            <h1>Explorar Filmes</h1>
+            <p>Descubra histórias sáficas emocionantes e diversas</p>
+        </div>
+    </header>
+
+    <section id="destaques" class="content-section">
+        <h2>Filmes em Destaque</h2>
+        <div class="movie-grid">
+            <div class="movie-card" data-category="romance">
+                <h3>Imagine Me & You</h3>
+                <video controls width="350">
+                    <source src="imagine.mp4" type="video/mp4">
+                    Seu navegador não oferece suporte ao elemento de vídeo. Atualize-o para a versão mais recente.
+                </video>
+            </div>
+            <div class="movie-card" data-category="drama">
+                <h3>Bottoms</h3>
+                <video controls width="350" cover="">
+                    <source src="bottoms.mp4" type="video/mp4">
+                    Seu navegador não oferece suporte ao elemento de vídeo. Atualize-o para a versão mais recente.
+                </video>
+            </div>
+            <div class="movie-card" data-category="aventura">
+                <h3>Wynonna Earp: Vengeance</h3>
+                <video controls width="350">
+                    <source src="wynonna.mp4" type="video/mp4">
+                    Seu navegador não oferece suporte ao elemento de vídeo. Atualize-o para a versão mais recente.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="categorias" class="content-section">
+        <h2>Filtrar por Categoria</h2>
+        <div class="filter-grid">
+            <div class="filter-card" data-filter="drama">Drama</div>
+            <div class="filter-card" data-filter="romance">Romance</div>
+            <div class="filter-card" data-filter="aventura">Aventura</div>
+            <div class="filter-card" data-filter="comedia">Comédia</div>
+            <div class="filter-card" data-filter="suspense">Suspense</div>
+        </div>
+    </section>
+
+    <!-- Seção de Filmes Recentes -->
+    <section id="recentes" class="content-section">
+        <h2>Filmes Recentes</h2>
+        <div class="movie-grid">
+            <div class="movie-card" data-category="drama">
+                <img src="filme4.jpg" alt="Filme 4">
+                <h3>Filme 4</h3>
+                <p>Drama de uma vida realista.</p>
+                <button class="trailer-btn" data-trailer="trailer4.mp4">Assistir Trailer</button>
+            </div>
+            <div class="movie-card" data-category="romance">
+                <img src="filme5.jpg" alt="Filme 5">
+                <h3>Filme 5</h3>
+                <p>Uma história de amor verdadeiro.</p>
+                <button class="trailer-btn" data-trailer="trailer5.mp4">Assistir Trailer</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal de Trailer -->
+    <div id="trailer-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <video id="trailer-video" controls>
+                <source src="" type="Luce & Rachel.mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div>
+
+    <footer id="sobre" class="footer">
+        <h2>Sobre Nós</h2>
+        <p>Nosso objetivo é dar visibilidade às histórias sáficas no cinema e nas séries.</p>
+        <p>&copy; 2024 Orgulho Sápico. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
